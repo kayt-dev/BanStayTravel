@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hồ Pa Khoang - BanStay</title>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts: Montserrat (headings) & Open Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="CSS/features.css" rel="stylesheet" />
+    <link href="CSS/post.css" rel="stylesheet" />
+    <link href="CSS/anim.css" rel="stylesheet" />
+    <link href="CSS/hopakhoang.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR (match index) -->
+    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">BanStay</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="features.html">Địa điểm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Lịch trình</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Đăng địa điểm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="btn btn-contact" href="contact.html">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO with image and overlay title -->
+    <header class="hero-lake">
+      <div class="hero-image-wrap">
+        <img
+          src="../img/du-lich-ho-pa-khoang-4.jpg"
+          alt="Hồ Pa Khoang"
+          class="hero-image"
+        />
+        <div class="hero-overlay">
+          <h1 class="hero-title" style="color: #ffffff">Hồ Pa Khoang</h1>
+          <p class="hero-subtitle">
+            Hồ nước thơ mộng giữa núi rừng Điện Biên – điểm đến lý tưởng cho
+            nghỉ dưỡng và trải nghiệm thiên nhiên.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Highlights (compact) -->
+    <section class="section-padding highlights">
+      <div class="container">
+        <div class="row g-2 align-items-center justify-content-center">
+          <div class="col-6 col-md-3">
+            <div class="highlight-chip">
+              <span class="chip-title">Độ yên bình</span>
+              <span class="chip-sub">Rất cao</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="highlight-chip">
+              <span class="chip-title">Phù hợp</span>
+              <span class="chip-sub">Gia đình, cặp đôi</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="highlight-chip">
+              <span class="chip-title">Hoạt động</span>
+              <span class="chip-sub">SUP, picnic, cắm trại</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="highlight-chip">
+              <span class="chip-title">Chi phí</span>
+              <span class="chip-sub">Tiết kiệm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Lake: image left, quick info + share right -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <!-- Left: Lake image -->
+          <div class="col-lg-6 order-lg-1">
+            <div class="about-lake-img-frame">
+              <img
+                class="img-fluid about-lake-img"
+                src="../img/du-lich-ho-pa-khoang-4.jpg"
+                alt="Hồ Pa Khoang"
+              />
+            </div>
+          </div>
+          <!-- Right: Quick info + Share card -->
+          <div class="col-lg-6 order-lg-2">
+            <h2 class="fw-bold mb-3">Giới thiệu</h2>
+            <p class="text-secondary">
+              Hồ Pa Khoang nằm cách trung tâm thành phố Điện Biên Phủ khoảng
+              20km, bao bọc bởi rừng núi trùng điệp. Nước hồ trong xanh, không
+              gian yên bình thích hợp cho các hoạt động thư giãn như chèo
+              thuyền, câu cá và dã ngoại.
+            </p>
+            <div class="row g-3 mt-2">
+              <div class="col-12">
+                <ul
+                  class="list-unstyled info-list vstack gap-2 text-secondary m-0"
+                >
+                  <li>
+                    <i class="bi bi-geo-alt me-2"></i>Xã Mường Phăng, Điện Biên
+                  </li>
+                  <li>
+                    <i class="bi bi-clock me-2"></i>Thời điểm đẹp: 9–16h, mùa
+                    thu – đông
+                  </li>
+                  <li>
+                    <i class="bi bi-activity me-2"></i>Hoạt động: SUP, kayak,
+                    picnic, chụp ảnh
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <div class="card share-card border-0 shadow-sm">
+                  <div class="card-body p-3">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-2"
+                    >
+                      <h5 class="m-0 fw-semibold">Chia sẻ địa điểm này</h5>
+                      <span class="badge text-bg-warning"
+                        >Gợi ý cho bạn bè</span
+                      >
+                    </div>
+                    <p class="text-secondary mb-3">
+                      Sao chép liên kết hoặc chia sẻ qua mạng xã hội.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <button
+                        class="btn btn-sm btn-outline-secondary"
+                        type="button"
+                        onclick="navigator.clipboard.writeText(location.href)"
+                      >
+                        <i class="bi bi-link-45deg me-1"></i>Sao chép liên kết
+                      </button>
+                      <a
+                        class="btn btn-sm btn-outline-primary"
+                        target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u="
+                        rel="noopener"
+                      >
+                        <i class="bi bi-facebook me-1"></i>Facebook
+                      </a>
+                      <a
+                        class="btn btn-sm btn-outline-dark"
+                        target="_blank"
+                        href="https://www.tiktok.com/"
+                        rel="noopener"
+                      >
+                        <i class="bi bi-tiktok me-1"></i>TikTok
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Activities -->
+    <section class="section-padding bg-body-tertiary">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Trải nghiệm tại Pa Khoang</h2>
+          <p class="text-secondary mb-0">
+            Những hoạt động được du khách yêu thích
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card feature-card h-100">
+              <img
+                src="../img/hopakhoang.jpg"
+                class="card-img-top"
+                alt="Chèo SUP"
+              />
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">Chèo thuyền SUP/Kayak</h5>
+                <p class="text-secondary">
+                  Lướt nhẹ trên mặt hồ, tận hưởng gió mát và khung cảnh trong
+                  lành.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card feature-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop"
+                class="card-img-top"
+                alt="Picnic"
+              />
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">Picnic & Check-in</h5>
+                <p class="text-secondary">
+                  Trải khăn bên bờ hồ, chụp những bức ảnh tuyệt đẹp với thiên
+                  nhiên.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card feature-card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop"
+                class="card-img-top"
+                alt="Cắm trại"
+              />
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">Cắm trại tối</h5>
+                <p class="text-secondary">
+                  Ngắm hoàng hôn, đốt lửa trại và thưởng thức ẩm thực địa
+                  phương.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="row g-3 mt-4">
+          <div class="col-6 col-md-3">
+            <img
+              class="img-fluid rounded-3"
+              src="../img/hopakhoang.jpg"
+              alt="Bờ hồ"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              class="img-fluid rounded-3"
+              src="../img/hopakhoang-ho.jpg"
+              alt="Bờ hồ"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              class="img-fluid rounded-3"
+              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=600&auto=format&fit=crop"
+              alt="Rừng ven hồ"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              class="img-fluid rounded-3"
+              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=600&auto=format&fit=crop"
+              alt="Hoàng hôn"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itineraries (Suggested Plans) -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Lịch trình gợi ý</h2>
+          <p class="text-secondary mb-0">Chọn nhanh hành trình phù hợp thời gian của bạn.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="itinerary-card h-100">
+              <div class="itinerary-header">
+                <h4 class="m-0">1 Ngày tại Pa Khoang</h4>
+                <span class="badge plan-badge">Day Trip</span>
+              </div>
+              <ul class="timeline">
+                <li><span class="time">08:30</span><span class="desc"><i class="bi bi-geo-alt me-1"></i>Đón tại TP. Điện Biên</span></li>
+                <li><span class="time">09:00</span><span class="desc"><i class="bi bi-people me-1"></i>Tham quan bản Che Căn</span></li>
+                <li><span class="time">11:30</span><span class="desc"><i class="bi bi-egg-fried me-1"></i>Ăn trưa món địa phương</span></li>
+                <li><span class="time">13:30</span><span class="desc"><i class="bi bi-water me-1"></i>Chèo SUP/kayak trên hồ</span></li>
+                <li><span class="time">15:30</span><span class="desc"><i class="bi bi-camera me-1"></i>Check-in, nghỉ ngơi</span></li>
+                <li><span class="time">17:00</span><span class="desc"><i class="bi bi-bus-front me-1"></i>Trả khách về TP.</span></li>
+              </ul>
+              <div class="tags mt-2">
+                <span>#văn hóa</span><span>#SUP</span><span>#ẩm thực</span>
+              </div>
+              <div class="info-footer mt-3">
+                <div class="price-box"><span class="label">Giá từ</span><span class="price">600.000 VND</span></div>
+                <a href="contact.html" class="btn btn-cta">Đặt ngay</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="itinerary-card h-100">
+              <div class="itinerary-header">
+                <h4 class="m-0">2 Ngày 1 Đêm Pa Khoang</h4>
+                <span class="badge plan-badge">2D1N</span>
+              </div>
+              <div class="day-title">Ngày 1</div>
+              <ul class="timeline">
+                <li><span class="time">09:00</span><span class="desc">Di chuyển – nhận phòng homestay</span></li>
+                <li><span class="time">10:30</span><span class="desc">Tham quan bản, nghề truyền thống</span></li>
+                <li><span class="time">12:00</span><span class="desc">Bữa trưa đặc sản địa phương</span></li>
+                <li><span class="time">14:30</span><span class="desc">SUP/kayak – ngắm hoàng hôn</span></li>
+                <li><span class="time">18:30</span><span class="desc">Lửa trại + BBQ tối</span></li>
+              </ul>
+              <div class="day-title">Ngày 2</div>
+              <ul class="timeline">
+                <li><span class="time">07:00</span><span class="desc">Bữa sáng</span></li>
+                <li><span class="time">08:00</span><span class="desc">Trekking nhẹ rừng bản</span></li>
+                <li><span class="time">11:00</span><span class="desc">Ăn trưa – nghỉ ngơi</span></li>
+                <li><span class="time">13:30</span><span class="desc">Trả phòng – về lại TP.</span></li>
+              </ul>
+              <div class="tags mt-2"><span>#homestay</span><span>#lửa trại</span><span>#trekking</span></div>
+              <div class="info-footer mt-3">
+                <div class="price-box"><span class="label">Giá từ</span><span class="price">1.200.000 VND</span></div>
+                <a href="contact.html" class="btn btn-cta">Đặt ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="schedule.html" class="btn btn-outline-secondary">Xem tất cả lịch trình</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map & Directions -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-3">Bản đồ & Di chuyển</h2>
+            <p class="text-secondary">
+              Từ trung tâm Điện Biên Phủ, đi theo QL279 hướng Mường Phăng khoảng
+              30 phút. Đến khu vực Pa Khoang, theo biển chỉ dẫn vào khu bờ hồ.
+            </p>
+            <ul class="list-unstyled vstack gap-2 text-secondary">
+              <li>
+                <i class="bi bi-car-front me-2"></i>Ô tô/xe máy: đường tốt, dễ
+                đi
+              </li>
+              <li>
+                <i class="bi bi-bus-front me-2"></i>Xe bus địa phương: dừng cách
+                hồ ~2km
+              </li>
+              <li>
+                <i class="bi bi-info-circle me-2"></i>Nên mang áo khoác, nước
+                uống, túi rác
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="ratio ratio-16x9 rounded-4 overflow-hidden">
+              <iframe
+                title="Bản đồ Hồ Pa Khoang"
+                src="https://www.google.com/maps?q=H%E1%BB%93+Pa+Khoang,+%C4%90i%E1%BB%87n+Bi%C3%AAn&output=embed"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-padding bg-body-tertiary">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Câu hỏi thường gặp</h2>
+        </div>
+        <div class="accordion" id="faq">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#a1"
+                aria-expanded="true"
+                aria-controls="a1"
+              >
+                Có dịch vụ thuê SUP/kayak không?
+              </button>
+            </h2>
+            <div
+              id="a1"
+              class="accordion-collapse collapse show"
+              aria-labelledby="q1"
+              data-bs-parent="#faq"
+            >
+              <div class="accordion-body">
+                Có. Bạn có thể thuê SUP/kayak tại khu bờ hồ với giá hợp lý.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#a2"
+                aria-expanded="false"
+                aria-controls="a2"
+              >
+                Có chỗ gửi xe và nhà vệ sinh không?
+              </button>
+            </h2>
+            <div
+              id="a2"
+              class="accordion-collapse collapse"
+              aria-labelledby="q2"
+              data-bs-parent="#faq"
+            >
+              <div class="accordion-body">
+                Có bãi gửi xe và nhà vệ sinh công cộng gần khu vực bờ hồ.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q3">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#a3"
+                aria-expanded="false"
+                aria-controls="a3"
+              >
+                Thời điểm nào chụp ảnh đẹp nhất?
+              </button>
+            </h2>
+            <div
+              id="a3"
+              class="accordion-collapse collapse"
+              aria-labelledby="q3"
+              data-bs-parent="#faq"
+            >
+              <div class="accordion-body">
+                Buổi sáng từ 9–11h và chiều từ 15–17h, ánh sáng ấm và dịu.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+              <div class="card-body p-4 text-center">
+                <h3 class="fw-bold mb-2">Sẵn sàng khám phá Pa Khoang?</h3>
+                <p class="text-secondary mb-3">
+                  Đặt lịch hoặc liên hệ để nhận gợi ý hành trình phù hợp.
+                </p>
+                <div class="d-flex justify-content-center gap-3">
+                  <a href="schedule.html" class="btn btn-cta">Đặt lịch ngay</a>
+                  <a href="contact.html" class="btn btn-outline-secondary"
+                    >Liên hệ</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER (match index) -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Du Lịch Cộng Đồng</h3>
+          <p>
+            Kết nối du khách với văn hóa bản địa, thiên nhiên và trải nghiệm bản
+            sắc Việt Nam. Hãy cùng chúng tôi khám phá những hành trình ý nghĩa.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Liên kết nhanh</h4>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="features.html">Điểm đến</a></li>
+            <li><a href="schedule.html">Lịch trình</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Thông tin liên hệ</h4>
+          <p>☎ Hotline: 0988 123 456</p>
+          <p>✉ Email: dulichcongdong@gmail.com</p>
+          <p>📍 Địa chỉ: Xã ABC, Huyện XYZ, Việt Nam</p>
+        </div>
+        <div class="footer-column">
+          <h4>Kết nối với chúng tôi</h4>
+          <div class="footer-socials">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">YouTube</a>
+            <a href="#" target="_blank">TikTok</a>
+          </div>
+          <p class="subscribe-text">Đăng ký để nhận tin mới</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Nhập email của bạn" />
+            <button type="submit">Gửi</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2025 Du Lịch Cộng Đồng – All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/anim.js"></script>
+  </body>
+</html>

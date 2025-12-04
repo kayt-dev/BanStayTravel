@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khám Phá BanStay</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts: Montserrat (headings) & Open Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="../CSS/index.css" rel="stylesheet" />
+    <link href="../CSS/features.css" rel="stylesheet" />
+    <style>
+      /* Lightweight animations */
+      .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+      .reveal.show { opacity: 1; transform: translateY(0); }
+      .fade-in { animation: fadeIn .8s ease both; }
+      @keyframes fadeIn { from { opacity:0 } to { opacity:1 } }
+      .scale-in { animation: scaleIn .6s ease both; }
+      @keyframes scaleIn { from { opacity:0; transform: scale(.96) } to { opacity:1; transform: scale(1) } }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR (match index.html) -->
+    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#">BanStay</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+            <li class="nav-item"><a class="nav-link active" href="features.html">Địa điểm</a></li>
+            <li class="nav-item"><a class="nav-link" href="schedule.html">Lịch trình</a></li>
+            <li class="nav-item"><a class="nav-link" href="post.html">Đăng địa điểm</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Về chúng tôi</a></li>
+            <li class="nav-item ms-2"><a class="btn btn-contact" href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ============================
+        HERO
+============================= -->
+    <section class="hero-products reveal">
+      <h1 class="scale-in">Khám Phá BanStay</h1>
+      <p class="fade-in" style="animation-delay:.1s">Những địa điểm, trải nghiệm và hoạt động đặc sắc nhất dành cho bạn</p>
+    </section>
+
+    <!-- ============================
+        PRODUCT LIST
+============================= -->
+    <section class="product-section container">
+      <div class="text-center mb-5 reveal">
+        <h2 class="fw-bold">Điểm Đến Nổi Bật</h2>
+        <p class="text-muted">Khám phá vẻ đẹp thiên nhiên và văn hóa độc đáo</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1 -->
+        <div class="col-md-4 reveal">
+          <div class="product-card">
+              <img src="../img/hopakhoang.jpg" alt="Phong cảnh hồ Pa Khoang lúc hoàng hôn" />
+            <div class="product-info">
+              <h4>Bản Mường Xưa</h4>
+              <p>
+                Không gian bình yên, văn hóa truyền thống đặc sắc của người
+                Mường.
+              </p>
+              <a href="hopakhoang.html" class="btn btn-explore">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-md-4 reveal" style="transition-delay:.05s">
+          <div class="product-card">
+              <img src="../img/du-lich-ho-pa-khoang-4.jpg" alt="Mặt hồ trong xanh và đảo nhỏ" />
+            <div class="product-info">
+              <h4>Đồi Gió BanStay</h4>
+              <p>Ngắm hoàng hôn tuyệt đẹp và tận hưởng không khí trong lành.</p>
+              <a href="#" class="btn btn-explore">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-4 reveal" style="transition-delay:.1s">
+          <div class="product-card">
+              <img src="../img/hopakhoang-ho.jpg" alt="Bờ hồ và rừng ven hồ Pa Khoang" />
+            <div class="product-info">
+              <h4>Thác Mây Mờ</h4>
+              <p>Dòng thác mềm mại như dải lụa giữa núi rừng xanh thẳm.</p>
+              <a href="#" class="btn btn-explore">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+        <!-- 4  -->
+        <div class="col-md-4 reveal" style="transition-delay:.15s">
+          <div class="product-card">
+              <img src="../img/pa_khoang_006.webp" alt="Thuyền nhỏ lướt trên mặt hồ" />
+            <div class="product-info">
+              <h4>Đồi Gió BanStay</h4>
+              <p>Ngắm hoàng hôn tuyệt đẹp và tận hưởng không khí trong lành.</p>
+              <a href="#" class="btn btn-explore">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="col-md-4 reveal" style="transition-delay:.2s">
+          <div class="product-card">
+              <img src="../img/vanhoachecan.webp" alt="Văn hoá bản Che Căn Mường Phăng" />
+            <div class="product-info">
+              <h4>Đồi Gió BanStay</h4>
+              <p>Ngắm hoàng hôn tuyệt đẹp và tận hưởng không khí trong lành.</p>
+              <a href="#" class="btn btn-explore">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="col-md-4 reveal" style="transition-delay:.25s">
+          <div class="product-card">
+              <img src="../img/xa-muong-phang-dien-bien-10.jpg" alt="Cánh rừng và đồi núi ở Mường Phăng" />
+            <div class="product-info">
+              <h4>Đồi Gió BanStay</h4>
+              <p>Ngắm hoàng hôn tuyệt đẹp và tận hưởng không khí trong lành.</p>
+              <a href="#" class="btn btn-explore">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Cột 1 -->
+        <div class="footer-column">
+          <h3>Du Lịch Cộng Đồng</h3>
+          <p>
+            Kết nối du khách với văn hóa bản địa, thiên nhiên và trải nghiệm bản
+            sắc Việt Nam. Hãy cùng chúng tôi khám phá những hành trình ý nghĩa.
+          </p>
+        </div>
+
+        <!-- Cột 2 -->
+        <div class="footer-column">
+          <h4>Liên kết nhanh</h4>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#features">Điểm đến</a></li>
+            <li><a href="#schedule">Lịch trình</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3 -->
+        <div class="footer-column">
+          <h4>Thông tin liên hệ</h4>
+          <p>☎ Hotline: 0988 123 456</p>
+          <p>✉ Email: dulichcongdong@gmail.com</p>
+          <p>📍 Địa chỉ: Xã ABC, Huyện XYZ, Việt Nam</p>
+        </div>
+
+        <!-- Cột 4 -->
+        <div class="footer-column">
+          <h4>Kết nối với chúng tôi</h4>
+          <div class="footer-socials">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">YouTube</a>
+            <a href="#" target="_blank">TikTok</a>
+          </div>
+          <p class="subscribe-text">Đăng ký để nhận tin mới</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Nhập email của bạn" />
+            <button type="submit">Gửi</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Du Lịch Cộng Đồng – All rights reserved.
+      </div>
+    </footer>
+    <a
+      href="https://www.facebook.com/profile.php?id=61577290929759"
+      target="_blank"
+      class="fb-floating"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+        alt="Facebook"
+      />
+    </a>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Reveal on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>

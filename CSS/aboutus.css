@@ -1,0 +1,156 @@
+/* ============================
+   ROOT COLOR SYSTEM
+============================ */
+:root {
+  --primary: #2f7f4f; /* xanh lá rừng */
+  --accent: #3fb9a4; /* xanh ngọc */
+  --cta: #e3a72f; /* vàng nắng */
+  --bg-soft: #e8f6ef; /* xanh pastel */
+  --bg-main: #f4efe7; /* nền trắng kem */
+  --text: #1e4632; /* xanh đậm */
+  --muted: #6b7a6f;
+  --border: #a3a092;
+  --hero-grad1: #2e4a3d;
+  --hero-grad2: #3e6b50;
+  /* Typography */
+  --font-heading: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-body: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Reset */
+body {
+  background: var(--bg-main);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* ============================
+   ABOUT HERO
+============================ */
+.about-hero {
+  padding: 150px 0 100px;
+  background: linear-gradient(to bottom right, var(--hero-grad1), var(--hero-grad2));
+  color: #fff;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.about-hero p {
+  max-width: 680px;
+  margin: 15px auto 0;
+  opacity: 0.9;
+  font-size: 18px;
+}
+
+/* ============================
+   ABOUT SECTION
+============================ */
+.about-section {
+  padding: 80px 0;
+}
+
+.about-section h3 {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-section ul {
+  padding-left: 18px;
+}
+
+.about-section li {
+  margin-bottom: 6px;
+}
+
+/* ============================
+   IMAGE STYLE
+============================ */
+.about-img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* ============================
+   INFO CARD SECTION
+============================ */
+.about-values {
+  background: var(--bg-soft);
+  padding: 70px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.value-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  height: 100%;
+  border: 1px solid var(--border);
+  transition: 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.value-card h4 {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* ============================
+   TEAM SECTION
+============================ */
+.team-section {
+  padding: 70px 0 90px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 100px;
+  border: 4px solid var(--accent);
+  margin-bottom: 12px;
+}
+
+.team-member h5 {
+  margin-top: 10px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.team-member p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ============================
+   GLOBAL SPACING
+============================ */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary);
+}

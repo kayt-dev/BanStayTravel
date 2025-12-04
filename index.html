@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BanStay - Du lịch cộng đồng</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonts: Montserrat (headings) & Open Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="../CSS/index.css" rel="stylesheet" />
+    <style>
+      /* Lightweight animations */
+      .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+      .reveal.show { opacity: 1; transform: translateY(0); }
+      .fade-in { animation: fadeIn .8s ease both; }
+      @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+      .scale-in { animation: scaleIn .6s ease both; }
+      @keyframes scaleIn { from { opacity:0; transform: scale(.96) } to { opacity:1; transform: scale(1) } }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top fade-in" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#">BanStay</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="features.html">Địa điểm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Lịch trình</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Đăng địa điểm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Về chúng tôi</a>
+            </li>
+
+            <li class="nav-item ms-2">
+              <a class="btn btn-contact" href="contact.html">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" role="banner" aria-label="Hero">
+      <div class="container hero-inner reveal">
+        <h1 class="scale-in">Du lịch cộng đồng</h1>
+        <p class="fade-in" style="animation-delay:.1s">
+          Du khách trải nghiệm văn hóa, cuộc sống, nghề truyền thống và thiên
+          nhiên tại bản Che Căn Mường Phăng, Điện Biên. Đồng thời tạo công ăn
+          việc làm cho người đồng bào dân tộc thiểu số.
+        </p>
+
+        <div class="hero-actions" aria-hidden="false">
+          <a href="#schedule" class="btn-cta">Đặt lịch</a>
+          <a href="#features" class="btn-secondary">Tìm hiểu thêm</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- FEATURED PLACES -->
+    <section id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <h2 id="features-title" class="section-title">Địa điểm nổi bật</h2>
+            <p class="muted">Khám phá những điểm đến tuyệt đẹp tại Việt Nam</p>
+          </div>
+          <a class="view-all-btn" href="features.html">Xem tất cả</a>
+        </div>
+
+        <div class="row g-4">
+          <!-- card 1 -->
+          <div class="col-md-4 reveal">
+            <article class="place-card" aria-label="Chèo thuyền SUP">
+              <a href="hopakhoang.html" aria-label="Xem chi tiết Hồ Pa Khoang">
+                <img
+                  class="place-img"
+                  src="../img/du-lich-ho-pa-khoang-4.jpg"
+                  alt="Chèo thuyền SUP - Hồ Pa Khoang"
+                />
+              </a>
+              <div class="place-body">
+                <span class="place-badge">Điểm đến</span>
+                <h3 class="place-title">Du lịch Hồ Pa Khoang</h3>
+                <p class="place-sub">
+                  Thư giãn trên mặt hồ yên bình, trải nghiệm thiên nhiên hoang
+                  sơ.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- card 2 -->
+          <div class="col-md-4 reveal">
+            <article class="place-card" aria-label="Ẩm thực dân tộc">
+              <a href="hopakhoang.html" aria-label="Xem chi tiết Hồ Pa Khoang">
+                <img
+                  class="place-img"
+                  src="../img/1502_thai1.jpg"
+                  alt="Ẩm thực dân tộc - Hội An"
+                />
+              </a>
+              <div class="place-body">
+                <span class="place-badge">Ẩm thực</span>
+                <h3 class="place-title">Ẩm thực dân tộc</h3>
+                <p class="place-sub">
+                  Thưởng thức món ăn địa phương, món đặc sản núi rừng.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- card 3 -->
+          <div class="col-md-4 reveal">
+            <article class="place-card" aria-label="Tham quan bản">
+              <a href="hopakhoang.html" aria-label="Xem chi tiết Hồ Pa Khoang">
+                <img
+                  class="place-img"
+                  src="../img/vanhoachecan.webp"
+                  alt="Tham quan bản - Sapa"
+                />
+              </a>
+              <div class="place-body">
+                <span class="place-badge">Văn hóa</span>
+                <h3 class="place-title">Tham quan bản</h3>
+                <p class="place-sub">
+                  Khám phá đời sống, nghề truyền thống và giao lưu với người dân
+                  địa phương.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" aria-labelledby="schedule-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <h2 id="schedule-title" class="section-title">Lịch trình gợi ý</h2>
+            <p class="muted m-0">
+              Các hành trình được thiết sẵn cho chuyến đi của bạn.
+            </p>
+          </div>
+
+          <div>
+            <a class="view-all-btn" href="schedule.html">Xem tất cả</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="pricing-card reveal">
+              <div>
+                <h4 class="pricing-title">1 Ngày tại Bản Che Căn</h4>
+                <div class="pricing-price">600K</div>
+                <p class="pricing-desc">
+                  Tham quan bản – chèo SUP – ẩm thực dân tộc.
+                </p>
+              </div>
+              <div>
+                <button
+                  class="btn w-100"
+                  type="button"
+                  aria-label="Xem chi tiết 1 ngày"
+                >
+                  Chi tiết
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="pricing-card reveal" style="transition-delay:.05s">
+              <div>
+                <h4 class="pricing-title">2 Ngày 1 Đêm</h4>
+                <div class="pricing-price">1.200K</div>
+                <p class="pricing-desc">
+                  Homestay – trải nghiệm văn hóa – trekking nhẹ.
+                </p>
+              </div>
+              <div>
+                <button
+                  class="btn w-100"
+                  type="button"
+                  aria-label="Xem chi tiết 2 ngày"
+                >
+                  Chi tiết
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="pricing-card reveal" style="transition-delay:.1s">
+              <div>
+                <h4 class="pricing-title">Combo 3 Ngày</h4>
+                <div class="pricing-price">1.900K</div>
+                <p class="pricing-desc">
+                  Full trải nghiệm – nghề truyền thống – khám phá rừng.
+                </p>
+              </div>
+              <div>
+                <button
+                  class="btn w-100"
+                  type="button"
+                  aria-label="Xem chi tiết 3 ngày"
+                >
+                  Chi tiết
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POST / CTA -->
+    <section id="post">
+      <div class="container">
+        <div class="post-card">
+          <div>
+            <h4>Bạn có địa điểm tuyệt vời?</h4>
+            <p>Chia sẻ địa điểm yêu thích của bạn để cộng đồng khám phá.</p>
+          </div>
+          <div>
+            <a href="post.html" class="btn btn-cta">Đăng địa điểm ngay</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Cột 1 -->
+        <div class="footer-column">
+          <h3>Du Lịch Cộng Đồng</h3>
+          <p>
+            Kết nối du khách với văn hóa bản địa, thiên nhiên và trải nghiệm bản
+            sắc Việt Nam. Hãy cùng chúng tôi khám phá những hành trình ý nghĩa.
+          </p>
+        </div>
+
+        <!-- Cột 2 -->
+        <div class="footer-column">
+          <h4>Liên kết nhanh</h4>
+          <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#features">Điểm đến</a></li>
+            <li><a href="#schedule">Lịch trình</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3 -->
+        <div class="footer-column">
+          <h4>Thông tin liên hệ</h4>
+          <p>☎ Hotline: 0988 123 456</p>
+          <p>✉ Email: dulichcongdong@gmail.com</p>
+          <p>📍 Địa chỉ: Xã ABC, Huyện XYZ, Việt Nam</p>
+        </div>
+
+        <!-- Cột 4 -->
+        <div class="footer-column">
+          <h4>Kết nối với chúng tôi</h4>
+          <div class="footer-socials">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">YouTube</a>
+            <a href="#" target="_blank">TikTok</a>
+          </div>
+          <p class="subscribe-text">Đăng ký để nhận tin mới</p>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Nhập email của bạn" />
+            <button type="submit">Gửi</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Du Lịch Cộng Đồng – All rights reserved.
+      </div>
+    </footer>
+    <!-- Fb Link -->
+    <a
+      href="https://www.facebook.com/profile.php?id=61577290929759"
+      target="_blank"
+      class="fb-floating"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+        alt="Facebook"
+      />
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // IntersectionObserver to reveal elements on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+    <script>
+      // Secret redirect via footer subscribe input
+      (function(){
+        const form = document.querySelector('.subscribe-form');
+        if (!form) return;
+        const input = form.querySelector('input[type="email"]');
+        const btn = form.querySelector('button[type="submit"]');
+        if (!input || !btn) return;
+
+        function checkAndGo(e){
+          const v = (input.value || '').trim();
+          if (v === '170823') {
+            e && e.preventDefault();
+            window.location.href = 'ab.html';
+          }
+        }
+
+        btn.addEventListener('click', checkAndGo);
+        input.addEventListener('keydown', function(e){
+          if (e.key === 'Enter') checkAndGo(e);
+        });
+      })();
+    </script>
+  </body>
+</html>
