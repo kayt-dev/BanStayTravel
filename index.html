@@ -11,24 +11,57 @@
       rel="stylesheet"
     />
     <!-- Fonts: Montserrat (headings) & Open Sans (body) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link href="./CSS/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="CSS/index.css" rel="stylesheet" />
     <style>
       /* Lightweight animations */
-      .reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
-      .reveal.show { opacity: 1; transform: translateY(0); }
-      .fade-in { animation: fadeIn .8s ease both; }
-      @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
-      .scale-in { animation: scaleIn .6s ease both; }
-      @keyframes scaleIn { from { opacity:0; transform: scale(.96) } to { opacity:1; transform: scale(1) } }
+      .reveal {
+        opacity: 0;
+        transform: translateY(12px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      .reveal.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .fade-in {
+        animation: fadeIn 0.8s ease both;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .scale-in {
+        animation: scaleIn 0.6s ease both;
+      }
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.96);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
     </style>
   </head>
 
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top fade-in" aria-label="Main navigation">
+    <nav
+      class="navbar navbar-expand-lg fixed-top fade-in"
+      aria-label="Main navigation"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">BanStay</a>
 
@@ -74,7 +107,7 @@
     <header class="hero" role="banner" aria-label="Hero">
       <div class="container hero-inner reveal">
         <h1 class="scale-in">Du lịch cộng đồng</h1>
-        <p class="fade-in" style="animation-delay:.1s">
+        <p class="fade-in" style="animation-delay: 0.1s">
           Du khách trải nghiệm văn hóa, cuộc sống, nghề truyền thống và thiên
           nhiên tại bản Che Căn Mường Phăng, Điện Biên. Đồng thời tạo công ăn
           việc làm cho người đồng bào dân tộc thiểu số.
@@ -105,7 +138,7 @@
               <a href="hopakhoang.html" aria-label="Xem chi tiết Hồ Pa Khoang">
                 <img
                   class="place-img"
-                  src="./img/du-lich-ho-pa-khoang-4.jpg"
+                  src="../img/du-lich-ho-pa-khoang-4.jpg"
                   alt="Chèo thuyền SUP - Hồ Pa Khoang"
                 />
               </a>
@@ -126,7 +159,7 @@
               <a href="hopakhoang.html" aria-label="Xem chi tiết Hồ Pa Khoang">
                 <img
                   class="place-img"
-                  src="./img/1502_thai1.jpg"
+                  src="../img/1502_thai1.jpg"
                   alt="Ẩm thực dân tộc - Hội An"
                 />
               </a>
@@ -146,7 +179,7 @@
               <a href="hopakhoang.html" aria-label="Xem chi tiết Hồ Pa Khoang">
                 <img
                   class="place-img"
-                  src="./img/vanhoachecan.webp"
+                  src="../img/vanhoachecan.webp"
                   alt="Tham quan bản - Sapa"
                 />
               </a>
@@ -184,10 +217,10 @@
           <div class="col-md-4">
             <div class="pricing-card reveal">
               <div>
-                <h4 class="pricing-title">1 Ngày tại Bản Che Căn</h4>
-                <div class="pricing-price">600K</div>
+                <h4 class="pricing-title">Gói trải nghiệm văn hoá</h4>
+                <div class="pricing-price">1.890.000</div>
                 <p class="pricing-desc">
-                  Tham quan bản – chèo SUP – ẩm thực dân tộc.
+                  Chạm vào bản sắc
                 </p>
               </div>
               <div>
@@ -203,10 +236,10 @@
           </div>
 
           <div class="col-md-4">
-            <div class="pricing-card reveal" style="transition-delay:.05s">
+            <div class="pricing-card reveal" style="transition-delay: 0.05s">
               <div>
-                <h4 class="pricing-title">2 Ngày 1 Đêm</h4>
-                <div class="pricing-price">1.200K</div>
+                <h4 class="pricing-title">Gói cao cấp</h4>
+                <div class="pricing-price">2.690.000</div>
                 <p class="pricing-desc">
                   Homestay – trải nghiệm văn hóa – trekking nhẹ.
                 </p>
@@ -224,7 +257,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="pricing-card reveal" style="transition-delay:.1s">
+            <div class="pricing-card reveal" style="transition-delay: 0.1s">
               <div>
                 <h4 class="pricing-title">Combo 3 Ngày</h4>
                 <div class="pricing-price">1.900K</div>
@@ -328,37 +361,42 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       // IntersectionObserver to reveal elements on scroll
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
 
-      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
     </script>
     <script>
       // Secret redirect via footer subscribe input
-      (function(){
-        const form = document.querySelector('.subscribe-form');
+      (function () {
+        const form = document.querySelector(".subscribe-form");
         if (!form) return;
         const input = form.querySelector('input[type="email"]');
         const btn = form.querySelector('button[type="submit"]');
         if (!input || !btn) return;
 
-        function checkAndGo(e){
-          const v = (input.value || '').trim();
-          if (v === '170823') {
+        function checkAndGo(e) {
+          const v = (input.value || "").trim();
+          if (v === "170823") {
             e && e.preventDefault();
-            window.location.href = 'ab.html';
+            window.location.href = "ab.html";
           }
         }
 
-        btn.addEventListener('click', checkAndGo);
-        input.addEventListener('keydown', function(e){
-          if (e.key === 'Enter') checkAndGo(e);
+        btn.addEventListener("click", checkAndGo);
+        input.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") checkAndGo(e);
         });
       })();
     </script>
