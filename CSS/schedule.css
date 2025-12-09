@@ -104,6 +104,76 @@
 .compact-itineraries .timeline li::before { top: 14px; width: 8px; height: 8px; }
 .compact-itineraries .timeline .time { min-width: 56px; font-size: 0.95rem; }
 .compact-itineraries .price-box .label { font-size: 0.85rem; }
+
+/* Package layout (two-column card) */
+.package-card {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,.06);
+  height: 100%;
+}
+.package-left, .package-right { padding: 22px; }
+.package-left { display: flex; flex-direction: column; gap: 10px; }
+.package-right { display: flex; flex-direction: column; }
+.package-title {
+  font-family: var(--font-heading, 'Montserrat', sans-serif);
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 10px;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  text-wrap: balance;
+  font-size: clamp(1.05rem, 1.2rem + 0.4vw, 1.45rem);
+}
+.package-title::after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin-top: 6px;
+}
+.package-price {
+  font-weight: 800;
+  font-size: 1.6rem;
+  background: rgba(0,0,0,.06);
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+.package-sub { color: var(--muted); font-size: .95rem; }
+.package-list { margin: 0; padding-left: 1rem; }
+.package-list li { margin: 8px 0; border-bottom: 1px dashed rgba(0,0,0,.12); padding-bottom: 6px; }
+.package-list li:last-child { border-bottom: none; }
+.package-list li::marker { color: var(--primary); }
+
+/* Color themes for packages */
+.package-soft { background: #eaf6e9; }
+.package-premium { background: #ffe6d5; }
+
+/* Booking button */
+.package-actions { margin-top: 14px; }
+.package-actions .btn-book {
+  background: var(--cta);
+  color: #1e4632;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  box-shadow: 0 6px 18px rgba(227, 167, 47, 0.18);
+}
+.package-actions .btn-book:hover { background: #ffb941; }
+.package-actions { margin-top: auto; }
+
+/* Responsive stack */
+@media (max-width: 991px) {
+  .package-card { grid-template-columns: 1fr; }
+  .package-left, .package-right { padding: 18px; }
+}
 /* ============================
         COLOR PALETTE
 ============================= */
